@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content-width="device-width, initial-scale=1.0, maximum-scale=1">
+	<title>My website</title>
+	<link href="Landingpage3.css" rel="stylesheet" type="text/css"/>
+	<link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Lato'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script>
+		 $(document).ready(function(){
+	  $("a").on('click', function(event) {
+	    if (this.hash !== "") {
+	      event.preventDefault();
+	      var hash = this.hash;
+	      $('html, body').animate({
+	        scrollTop: $(hash).offset().top
+	      }, 800, function(){
+	           window.location.hash = hash;
+	      });
+	    }
+	  });
+	});
+
+		 function responsive() {
+		 	var x = document.getElementById("meniu");
+		 	if(x.className === "ascuns") {
+		 		x.className =+ "afisat";
+		 	} else {
+		 		x.className = "ascuns";
+		 	}
+		 }
+	</script>
+</head>
+
+
+
+<body>
+
+<!-- HEADER -->
+<header>
+	<a javascript:void(0); class="buton_meniu" onClick="responsive()">
+	</a>
+
+	<nav>
+		<ul class="ascuns" id="meniu">
+			<li><a href="#home">home</a></li>
+			<li><img src="Media/arrow_down.png"></li>
+			<li><a href="#about">about</a></li>
+			<li><img src="Media/arrow_down.png"></li>
+			<li><a href="#guest">special guest</a></li>
+			<li><img src="Media/arrow_down.png"></li>
+			<li><a href="#agenda">agenda</a></li>
+			<li><img src="Media/arrow_down.png"></li>
+			<li><a href="#location" style="padding-right:0">buy tickets</a></li>
+		</ul>
+	</nav>
+</header>
+
+
+
+
+
+
+
+<!-- SECTION1 -->
+
+<section class="main" id="home">
+	<figure><img class="codeit_big" src="Media/logo.png"></figure>
+
+	<h2>
+<span class="blue">//</span> A 24-hour coding event inspiring women to innovate and create.</h2>
+
+	<div class="line"></div>
+
+	<table>
+		<tr>
+			<td>Minneapolis</td>
+			<td>Denver</td>
+			<td style="border-right:none;">Seattle</td>
+		</tr>
+	</table>
+
+	<div class="register">
+		<a class="uppercase" href="#">Register now</a>
+	</div>
+</section>
+
+
+
+
+
+
+<!-- SECTION2 -->
+
+<section class="codeit" id="about">
+		<div class="pos_relative">
+			<iframe id="stepit_video" src="https://www.youtube.com/embed/tzRn0fSBKTo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		</div>
+
+		<h1><span class="purple">&lt;</span> What is Codeit <span class="purple">/&gt;</span></h1>
+
+		<p class="bold first" style="padding-bottom:20px">CodeIt is a 24-hour coding event inspiring women to innovate and create. CodeIt encourages women to stand up and stand out in such a male-dominated tech industry, empowering them to collaborate together to build amazing things in one fun-filled, coffee-filled, 24-hour long coding extravaganza.</p>
+
+		<p class="bold">At the end of the 24 hours, various awards will be given out to the different teams, judging projects on creativity, difficulty, humor, and more! All in all, this event is less of a competition and more of an excuse to drink coffee, stay up late, and make connections with other powerful women.</p>
+</section>
+
+
+
+
+
+
+<!-- SECTION3 -->
+<section class="profiles" id="guest">
+		<h1><span class="blue">&lt;</span> Special Profiles <span class="blue">/&gt;</span></h1>
+
+		<p class="bold">CodeIt is powered by some amazing women in the tech world. Not only do these women have some major coding chops, but they have also been warriors for women in the tech industry, overcoming stereotypes and striving for excellence.</p>
+
+	<div class="all_persons">
+
+		<div class="profiles">
+			<figure><img src="Media/profiles-1.jpg"></figure>
+
+			<h2 class="purple">
+				Vanessa Blue
+			</h2>
+
+			<div class="black_line"></div>
+
+			<h3 class="uppercase">Ceo of techwomen</h3>
+
+			<p>Vanessa is a self-proclaimed nerd who loves to immerse herself in code all day long.</p>
+		</div>
+
+		<div class="profiles">
+			<figure><img src="Media/profiles-2.jpg"></figure>
+
+			<h2 class="purple">
+				Aleigh Johnson
+			</h2>
+
+			<div class="black_line"></div>
+
+			<h3 class="uppercase">Co-founder of Codegirl</h3>
+
+			<p>Aleigh is the founder of the new nonprofit CodeGirls and is a proud cat mom of 4 lovable furballs.</p>
+		</div>
+
+		<div class="profiles" style="margin-right:0">
+			<figure><img src="Media/profiles-3.jpg"></figure>
+
+			<h2 class="purple">
+				Marlee Williams
+			</h2>
+
+			<div class="black_line"></div>
+
+			<h3 class="uppercase">Game Developer</h3>
+
+			<p>Marlee is a huge gamer and loves to design and develop her own zombie video games. Brainz.</p>
+		</div>
+	</div>
+</section>
+
+
+
+
+
+
+<!-- SECTION4 -->
+<section class="plan" id="agenda">
+		<h1><span class="white">&lt;</span> What's the Plan? <span class="white">/&gt;</span></h1>
+
+		<p>24 hours may seem like a long time, but when your nose is to the grindstone, it's easy to lose track of time. That's why we created this nifty schedule for you to check out and remind yourself to take a break or two.</p>
+
+		<div class="schedule">
+			<ul>
+				<li><span class="purple bold">8:00 - 9:00 AM</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Registration &amp breakfast</li>
+				<li><span class="purple bold">9:00 - 10:00 AM</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Team formation</li>
+				<li><span class="purple bold">10:00 - 12:00 PM</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Work time</li>
+				<li><span class="purple bold">12:00 - 1:00 PM</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lunch</li>
+			</ul>
+
+			<ul>
+				<li><span class="purple bold">8:00 - 9:00 AM</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Registration &amp breakfast</li>
+				<li><span class="purple bold">9:00 - 10:00 AM</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Team formation</li>
+				<li><span class="purple bold">10:00 - 12:00 PM</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Work time</li>
+				<li><span class="purple bold">12:00 - 1:00 PM</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lunch</li>
+			</ul>
+
+			<ul style="margin:0">
+				<li><span class="purple bold">8:00 - 9:00 AM</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Registration &amp breakfast</li>
+				<li><span class="purple bold">9:00 - 10:00 AM</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Team formation</li>
+				<li><span class="purple bold">10:00 - 12:00 PM</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Work time</li>
+				<li><span class="purple bold">12:00 - 1:00 PM</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lunch</li>
+			</ul>
+		</div>
+</section>
+
+
+
+
+
+
+<!-- SECTION5 -->
+<section class="locations" id="location">
+	<h1><span class="blue">&lt;</span> Codeit Location <span class="blue">/&gt;</span></h1>
+
+	<p>We want this event to be HUGE, and therefore CodeIt isn't limited to one metropolitan area. We've chosen three host cities across the United States and hope to expand the event even further in upcoming years.</p>
+
+	<div class="all_locations">
+		<div class="locations">
+			<figure><img src="Media/cta-1.jpg"></figure>
+
+			<h2 class="purple">Minneapolis</h2>
+
+			<div class="black_line"></div>
+
+			<h3 class="bold uppercase">September 21 - 22, 2015</h3>
+
+			<div class="register">
+				<a class="uppercase" href="#">Register now</a>
+			</div>
+		</div>
+
+		<div class="locations">
+			<figure><img src="Media/cta-2.jpg"></figure>
+
+			<h2 class="purple">Denver</h2>
+
+			<div class="black_line"></div>
+
+			<h3 class="bold uppercase">October 17 - 18, 2015</h3>
+
+			<div class="register">
+				<a class="uppercase" href="#">Register now</a>
+			</div>	
+		</div>
+
+		<div class="locations">
+			<figure><img src="Media/cta-3.jpg"></figure>
+
+			<h2 class="purple">Seattle</h2>
+
+			<div class="black_line"></div>
+
+			<h3 class="bold uppercase">November 20 - 21, 2015</h3>
+
+			<div class="register">
+				<a class="uppercase" href="#">Register now</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+
+
+
+
+
+<!-- FOOTER -->
+
+<footer>
+	<figure><img class="codeit_small" src="Media/logo.png"></figure>
+
+	<nav>
+	<a href="#"><figure><img src="Media/facebook.png"></figure></a>
+	<a href="#"><figure><img src="Media/google.png"></figure></a>
+	<a href="#"><figure><img src="Media/linkedin.png"></figure></a>
+	<a href="#"><figure><img src="Media/twitter.png"></figure></a>
+	</nav>
+
+	<table>
+		<tr>
+			<td>2015 Company Name</td>
+			<td class="blue">Legal Information</td>
+		</tr>
+	</table>
+	
+</footer>
+
+</body>
+
+
+</html>
